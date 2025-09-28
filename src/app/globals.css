@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+.on{
+    color: #b08dc7;
+}
+.collect {
+    padding: 0 20px;
+    margin: auto;
+}
+
+@media(min-width:768px){
+    .collect{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .collect{
+        width: 950px;
+    }
+}
+@media(min-width:1200px){
+    .collect{
+        width: 1150px;
+    }
+}
