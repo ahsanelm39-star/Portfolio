@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
 .on{
     color: #b08dc7;
 }
@@ -22,4 +29,25 @@
     .collect{
         width: 1150px;
     }
+}
+@media(max-width:480px){
+    .skill-box{
+        width: 100%;
+    }
+}
+.up{
+    
+    perspective: 500px;
+}
+.box{
+    transform-style: preserve-3d;
+}
+
+.box:hover{
+    transform:translatex(-10px)  translatez(20px) rotate3d(.3,.3,.3,5deg);
+    -webkit-transform:translatex(-10px)  translatez(20px) rotate3d(.3,.3,.3,5deg);
+    -moz-transform:translatex(-10px)  translatez(20px) rotate3d(.3,.3,.3,5deg);
+    -ms-transform:translatex(-10px)  translatez(20px) rotate3d(.3,.3,.3,5deg);
+    -o-transform:translatex(-10px)  translatez(20px) rotate3d(.3,.3,.3,5deg);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.217) ;
 }
