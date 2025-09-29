@@ -23,7 +23,7 @@ const GoUp = () => {
     return ( 
         <div onClick={()=>{
             window.scrollTo(0,0)
-        }} className="arow go-up fixed bottom-4 -right-12 bg-[#3263ad] rounded-full text-2xl p-1 cursor-pointer text-[#ddd]">
+        }} className="arow go-up fixed bottom-4 -right-12 bg-gradient-to-r from-[#9b47e4] to-[#2259ab] rounded-full text-2xl p-1 cursor-pointer text-[#ddd]">
             <FontAwesomeIcon icon={faCircleUp} />
         </div>
     )

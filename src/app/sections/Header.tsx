@@ -1,5 +1,7 @@
+"use client"
+
 /// commponent
-import Header from "./Nave"
+import Nave from "./Nave"
 /// photos
 import Image from 'next/image'
 import myPhoto from '../../../public/Images/me.png'
@@ -11,13 +13,29 @@ import Wat from '../../../public/Images/wats.png'
 /////icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSquareCheck } from "@fortawesome/free-regular-svg-icons"
+import Link from "next/link"
+import { useEffect } from "react"
 
 
-const Hero = () => {
+const Header = () => {
+
+
+    useEffect(()=>{
+        window.onload=()=>{
+            const text = document.querySelector(".text") as HTMLElement
+            const image = document.querySelector(".image") as HTMLElement
+            text.classList.add("move-text")
+            image.classList.add("move-image")
+        }
+    },[])
+
+
+
     return (
-        <header id="hero" className="min-h-[100vh] max-lg:pt-28 bg-[#1b0d27] flex justify-center items-center">
-            <Header/>
-            <div className="collect flex justify-between items-center flex-wrap gap-10 max-lg:flex-col ">
+        <header id="hero" className="min-h-[100vh] max-lg:pt-28 bg-gradient-to-b from-[#1b0d27] to-[#30285a] flex justify-center items-center">
+            <Nave/>
+            <div className="collect flex justify-between items-center flex-wrap gap-10 max-lg:flex-col text 
+            transition duration-500 ">
                 <div className="w-[58%] max-lg:w-1/1 max-lg:text-center">
                     <div className="relative w-fit pr-3 mb-8 max-lg:mx-auto max-lg:flex max-lg:items-center max-lg:flex-col">
                         <Image src={myPhoto} alt = {"my Photo"} className="w-25 rounded-full"/>
@@ -44,8 +62,12 @@ const Hero = () => {
                         <h2 className="text-3xl font-bold mb-3 bg-gradient-to-r from-[#4f47e4] to-[#ffffff] text-transparent bg-clip-text">Front End Developer</h2>
                         <p className="text-[#ccc] text-lg">I create modern, responsive websites with clean code and strong SEO foundations to help businesses stand out online.</p>
                     </div>
+                    <Link href={"#contact"}>
+                        <button className="bg-gradient-to-r from-[#2e74ca] to-[#8c279b] p-2 text-white
+                    rounded-xl cursor-pointer transition duration-300 hover:opacity-80 mt-4">Contact Me</button>
+                    </Link>
                 </div>
-                <div className=" w-[37%] max-lg:w-[400px] max-sm:w-[300px]">
+                <div className=" w-[37%] max-lg:w-[400px] max-sm:w-[300px] image transition duration-500 ">
                     <Image src={HeroPhoto} alt = {"Hero photo"} className="w-1/1"/>
                 </div>
             </div>
@@ -53,4 +75,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Header

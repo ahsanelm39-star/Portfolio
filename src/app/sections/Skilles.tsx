@@ -15,14 +15,14 @@ const Skilles = () => {
 
     const data = [
         {
-            icon:React,
-            name:"React",
-            persent:"94%"
-        },
-        {
             icon:Css,
             name:"CSS",
             persent:"96%"
+        },
+        {
+            icon:React,
+            name:"React",
+            persent:"94%"
         },
         {
             icon:Github,
@@ -74,7 +74,7 @@ const Skilles = () => {
 
     const dataList = data.map((skill,index)=>{
         return (
-            <div key={index} className="w-[200px] h-[220px] p-4 bg-[#111827] 
+            <div key={index} className="min-w-[150px] p-4 bg-[#111827] 
             flex flex-col items-center justify-center gap-4 rounded-xl skill-box transition-all duration-400 hover:bg-[#1c6dc5]">
                 <Image src = {skill.icon} alt = {skill.name}  className="w-20 bg-transparent"/>
                 <span className="text-xl font-bold text-white">{skill.name}</span>
@@ -86,10 +86,16 @@ const Skilles = () => {
     })
 
     return (
-        <section id="skills" className="bg-[#0f0715] min-h-[100vh] py-14 pt-22" >
-            <h2 className="text-white bg-[#1c6dc5] w-fit p-4 mx-auto font-[500] text-3xl -rotate-11 mb-24">MY SKILLS</h2>
-            <div className="collect flex gap-6 flex-wrap justify-center items-center">
-                {dataList}
+        <section id="skills" className="bg-gradient-to-b from-[#1b0d27] to-[#30285a] min-h-[100vh] py-14 pt-22" >
+            <h2 className="text-white bg-[#1c6dc5] w-fit p-4 mx-auto font-[500] text-3xl rounded-md mb-24">My Skills</h2>
+            <div className="collect  overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)] max-sm:[mask-image:linear-gradient(to_bottom,transparent,black,transparent)]">
+                <div className="flex gap-6 main-skill  max-sm:flex-col max-sm:w-1/1 max-sm:h-200 ">
+                    {dataList}
+                    {dataList}
+                    {dataList}
+                    {dataList}
+                    {dataList}
+                </div>
             </div>
         </section>
     )
