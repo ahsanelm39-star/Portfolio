@@ -50,7 +50,8 @@ const Services = () => {
 
   const dataList = data.map((serve,index)=>{
     return (
-      <div key={index} className="box border-2 border-[#0f0715] hover: transition duration-300 p-6 flex flex-col gap-4 bg-[#7246ca] w-[300px] rounded-xl">
+      <div key={index} className="box border-2 border-[#0f0715]
+      hover: transition duration-300 p-6 flex flex-col gap-4 bg-[#7246ca] w-[300px] max-sm:w-1/1 rounded-xl">
         <Image src={serve.img} alt={serve.title} className={`w-17 ${serve.title == "Website Management" ? "w-22" :""} `} />
         <h3 className=" bg-gradient-to-r from-[#1d187a] to-[#5f1183] text-transparent bg-clip-text font-bold text-2xl">{serve.title}</h3>
         <p className="text-white">{serve.dis}</p>

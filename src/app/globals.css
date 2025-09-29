@@ -51,3 +51,13 @@ html{
     -o-transform:translatex(-10px)  translatez(20px) rotate3d(.3,.3,.3,5deg);
     box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.217) ;
 }
+.go-up{
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+}
+.show{
+    right: 20px !important;
+}

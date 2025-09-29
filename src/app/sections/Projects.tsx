@@ -1,4 +1,4 @@
-"use client"
+
 ////images
 import Image from "next/image"
 import Github from '../../../public/Images/git.png'

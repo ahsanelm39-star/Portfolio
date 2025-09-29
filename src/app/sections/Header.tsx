@@ -11,8 +11,6 @@ import Wat from '../../../public/Images/wats.png'
 /////icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSquareCheck } from "@fortawesome/free-regular-svg-icons"
-import { faDigitalTachograph, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import Link from "next/link"
 
 
 const Hero = () => {
@@ -21,26 +19,28 @@ const Hero = () => {
             <Header/>
             <div className="collect flex justify-between items-center flex-wrap gap-10 max-lg:flex-col ">
                 <div className="w-[58%] max-lg:w-1/1 max-lg:text-center">
-                    <div className="relative w-fit pr-3 mb-6 max-lg:mx-auto">
+                    <div className="relative w-fit pr-3 mb-8 max-lg:mx-auto max-lg:flex max-lg:items-center max-lg:flex-col">
                         <Image src={myPhoto} alt = {"my Photo"} className="w-25 rounded-full"/>
-                        <FontAwesomeIcon icon={faSquareCheck} className="w-4 bg-blue-400 rounded-full h-4 absolute right-0 bottom-0 text-white" />
-                        <div className="flex gap-4 items-center absolute -bottom-4 -right-60">
-                            <Link target="blank" href={"https://accounts.google.com/SignOutOptions?hl=en&continue=https://mail.google.com/mail/&service=mail&ec=GBRAFw"}>
-                                <Image src={Google} alt="gogle" className="w-6 h-6"/>
-                            </Link>
-                            <Link target="blank" href={"https://github.com/ahsanelm39-star"}>
-                                <Image src={Git} alt="github" className="w-8 h-8"/>
-                            </Link>
-                            <Link target="blank" href={"https://www.facebook.com/ahmed.mohamed.311371/"}>
-                                <Image src={Face} alt="facebocke" className="w-9 h-9"/>
-                            </Link>
-                            <Link target="blank" href={""}>
-                                <Image src={Wat} alt="wats app" className="w-10 h-10 mt-1"/>
-                            </Link>
+                        <FontAwesomeIcon icon={faSquareCheck} className="h-[10px] bg-blue-400 rounded-full absolute
+                        right-2 bottom-2 text-white max-lg:bottom-11 max-lg:right-11" />
+                        <div className="flex gap-4 items-center absolute -bottom-4 -right-48 max-lg:relative max-lg:-right-2">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahsan.elm.39@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <Image src={Google} alt="gmail" className="w-5 h-5" />
+                            </a>
+
+                            <a href="https://github.com/ahsanelm39-star" target="_blank" rel="noopener noreferrer">
+                                <Image src={Git} alt="github" className="w-6 h-6" />
+                            </a>
+                            <a href="https://www.facebook.com/ahmed.mohamed.311371/" target="_blank" rel="noopener noreferrer">
+                                <Image src={Face} alt="facebook" className="w-8 h-8" />
+                            </a>
+                            <a href="https://wa.me/201014453260" target="_blank" rel="noopener noreferrer">
+                                <Image src={Wat} alt="whatsapp" className="w-9 h-9 mt-1" />
+                            </a>
                         </div>
                     </div>
                     <div>
-                        <h1 className="text-5xl max-md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#9b47e4] to-[#ffffff] text-transparent bg-clip-text">Hi I`am Ahmed Hassan</h1>
+                        <h1 className="text-5xl max-md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#9b47e4] to-[#ffffff] text-transparent bg-clip-text">Hi I&lsquo;am Ahmed Hassan</h1>
                         <h2 className="text-3xl font-bold mb-3 bg-gradient-to-r from-[#4f47e4] to-[#ffffff] text-transparent bg-clip-text">Front End Developer</h2>
                         <p className="text-[#ccc] text-lg">I create modern, responsive websites with clean code and strong SEO foundations to help businesses stand out online.</p>
                     </div>

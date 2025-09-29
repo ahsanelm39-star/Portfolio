@@ -1,4 +1,6 @@
 import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+import GoUp from "./sections/GoUp";
 import Header from "./sections/Header";
 import Projects from "./sections/Projects";
 import Services from "./sections/Services";
@@ -12,6 +14,8 @@ export default function Home() {
     <Skilles/>
     <Projects/>
     <Contact/>
+    <Footer/>
+    <GoUp/>
     </>
   );
 }
