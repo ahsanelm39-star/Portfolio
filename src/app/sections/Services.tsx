@@ -95,8 +95,8 @@ const Services = () => {
 
 
   return (
-    <section id="services" className="min-h-[100vh] bg-gradient-to-b from-[#30285a] to-[#1b0d27] py-14 pt-0">
-      <h2 className="text-white bg-[#1c6dc5] w-fit p-4 mx-auto font-[500] text-3xl  rounded-md mb-24">My Services</h2>
+    <section id="services" className="min-h-[100vh] bg-gradient-to-b from-[#30285a] to-[#1b0d27] pb-14 pt-20 lg:pt-0">
+      <h2 className="text-white bg-[#1c6dc5] w-fit p-4 mx-auto font-[500] text-3xl  rounded-md mb-18">My Services</h2>
       <div className="collect flex flex-wrap gap-6 justify-center items-center up">
         {dataList}
       </div>

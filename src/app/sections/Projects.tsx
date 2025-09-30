@@ -79,7 +79,7 @@ const Projects = () => {
 
     return (
         <section id="projects" className="bg-gradient-to-b from-[#2e2659] to-[#1b0d27] min-h-[100vh] py-14 max-sm:pt-30 sm:pt-0 pb-27 -my-10">
-            <h2 className="text-white bg-[#1c6dc5] w-fit p-4 mx-auto font-[500] text-3xl rounded-md mb-24">My Projects</h2>
+            <h2 className="text-white bg-[#1c6dc5] w-fit p-4 mx-auto font-[500] text-3xl rounded-md mb-20">My Projects</h2>
             <div className="collect flex flex-wrap gap-6 justify-center items-center up">
                 {dataList}
             </div>

@@ -141,6 +141,16 @@ html{
     -ms-transform: translatex(50px);
     -o-transform: translatex(50px);
 }
+@media (max-width:450px){
+    .image{
+    opacity: 0;
+    transform: translatex(20px);
+    -webkit-transform: translatex(20px);
+    -moz-transform: translatex(20px);
+    -ms-transform: translatex(20px);
+    -o-transform: translatex(20px);
+}
+}
 .me{
     opacity: 0;
     transform: translatey(-40px);
