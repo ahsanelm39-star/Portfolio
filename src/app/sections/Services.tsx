@@ -85,7 +85,7 @@ const Services = () => {
     return (
       <div key={index} className={`box border-2 border-[#6e6e6e]
       hover: transition duration-300 p-6 flex flex-col gap-4 bg-gradient-to-r from-[#9b47e4c7] to-[#4872b1d3] w-[300px]
-      max-sm:w-1/1 rounded-xl ${serve.move == "left" ? "move-left-ser" :"move-right-ser"} transition duration-1000 serve-box`}>
+      max-sm:w-1/1 rounded-xl ${serve.move == "left" ? "move-left-ser" :"move-right-ser"} transition duration-600 serve-box`}>
         <Image src={serve.img} alt={serve.title} className={`w-17 ${serve.title == "Website Management" ? "w-22" :""} `} />
         <h3 className=" bg-gradient-to-r from-[#1d187a] to-[#5f1183] text-transparent bg-clip-text font-bold text-2xl">{serve.title}</h3>
         <p className="text-white">{serve.dis}</p>
