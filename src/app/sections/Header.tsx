@@ -21,12 +21,16 @@ const Header = () => {
 
 
     useEffect(()=>{
-        window.onload=()=>{
             const text = document.querySelector(".text") as HTMLElement
+            text.style.transform='translatey(0)'
+            text.style.opacity='1'
             const image = document.querySelector(".image") as HTMLElement
-            text.classList.add("move-text")
-            image.classList.add("move-image")
-        }
+            image.style.transform='translatey(0)'
+            image.style.opacity='1'
+            const me = document.querySelector(".me") as HTMLElement
+            me.style.transform='translatey(0)'
+            me.style.opacity='1'
+        
     },[])
 
 
@@ -34,10 +38,10 @@ const Header = () => {
     return (
         <header id="hero" className="min-h-[100vh] max-lg:pt-28 bg-gradient-to-b from-[#1b0d27] to-[#30285a] flex justify-center items-center">
             <Nave/>
-            <div className="collect flex justify-between items-center flex-wrap gap-10 max-lg:flex-col text 
+            <div className="collect flex justify-between items-center flex-wrap gap-10 max-lg:flex-col 
             transition duration-500 ">
                 <div className="w-[58%] max-lg:w-1/1 max-lg:text-center">
-                    <div className="relative w-fit pr-3 mb-8 max-lg:mx-auto max-lg:flex max-lg:items-center max-lg:flex-col">
+                    <div className="relative w-fit pr-3 mb-8 max-lg:mx-auto max-lg:flex max-lg:items-center max-lg:flex-col me transition duration-700">
                         <Image src={myPhoto} alt = {"my Photo"} className="w-25 rounded-full"/>
                         <FontAwesomeIcon icon={faSquareCheck} className="h-[10px] bg-blue-400 rounded-full absolute
                         right-2 bottom-2 text-white max-lg:bottom-11 max-lg:right-11" />
@@ -57,8 +61,10 @@ const Header = () => {
                             </a>
                         </div>
                     </div>
-                    <div>
-                        <h1 className="text-5xl max-md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#9b47e4] to-[#ffffff] text-transparent bg-clip-text">Hi I&lsquo;am Ahmed Hassan</h1>
+                    <div className=" transition-all duration-700 text">
+                        <h1 className="text-5xl max-md:text-4xl font-bold mb-6 
+                        bg-gradient-to-r from-[#9b47e4] to-[#ffffff] text-transparent bg-clip-text
+                        ">Hi I&lsquo;am Ahmed Hassan</h1>
                         <h2 className="text-3xl font-bold mb-3 bg-gradient-to-r from-[#4f47e4] to-[#ffffff] text-transparent bg-clip-text">Front End Developer</h2>
                         <p className="text-[#ccc] text-lg">I create modern, responsive websites with clean code and strong SEO foundations to help businesses stand out online.</p>
                     </div>
@@ -67,7 +73,7 @@ const Header = () => {
                     rounded-xl cursor-pointer transition duration-300 hover:opacity-80 mt-4">Contact Me</button>
                     </Link>
                 </div>
-                <div className=" w-[37%] max-lg:w-[400px] max-sm:w-[300px] image transition duration-500 ">
+                <div className=" w-[37%] max-lg:w-[400px] max-sm:w-[300px] image transition-all duration-700">
                     <Image src={HeroPhoto} alt = {"Hero photo"} className="w-1/1"/>
                 </div>
             </div>

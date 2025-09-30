@@ -20,39 +20,45 @@ const Projects = () => {
             img:Building,
             name:"Building app",
             link:"https://building-app-five.vercel.app/",
-            git:"https://github.com/ahsanelm39-star/building"
+            git:"https://github.com/ahsanelm39-star/building",
+            move:"left"
         },
         {
             img:Clinic,
             name:"Clinic app",
             link:"https://clinic-01.netlify.app/",
-            git:"https://github.com/ahsanelm39-star/clinic-app"
+            git:"https://github.com/ahsanelm39-star/clinic-app",
+            move:"right"
         },
         {
             img:Allwakel,
             name:"Allwakel app",
             link:"https://all-wakel-01.netlify.app/",
-            git:"https://github.com/ahsanelm39-star/Programming-company"
+            git:"https://github.com/ahsanelm39-star/Programming-company",
+            move:"left"
         },
         {
             img:SaaS,
             name:"SaaS app",
             link:"https://landing-page-one-pearl-53.vercel.app/",
-            git:"https://github.com/ahsanelm39-star/SaaS-landing-page-01"
+            git:"https://github.com/ahsanelm39-star/SaaS-landing-page-01",
+            move:"right"
         },
         {
             img:Hospital,
             name:"Hospital app",
             link:"https://html-css-project-silk.vercel.app/",
-            git:"https://github.com/ahsanelm39-star/HTML-CSS-Project"
+            git:"https://github.com/ahsanelm39-star/HTML-CSS-Project",
+            move:"left"
         },
     ]
 
-    const dataList = data.map((project,index)=>{
+    const dataList = data.map((project,index)=>{ 
         return (
-            <div key={index} className="w-[300px] max-sm:w-1/1 box  bg-gradient-to-r from-[#9b47e45d] to-[#2259ab76] p-4 rounded-md
-            hover:border-2 hover:border-blue-300 transition duration-400 
-            ">
+            <div key={index} className={`w-[300px] max-sm:w-1/1 box  bg-gradient-to-r from-[#9b47e45d] to-[#2259ab76] p-4 rounded-md
+            hover:border-2 hover:border-blue-300
+            ${project.move == "left" ? "move-left-ser" :"move-right-ser"} transition duration-600 project-box
+            `}>
                 <Image src={project.img} alt={project.name} className="border-3 border-b-white mb-4"/>
                 <div className="flex justify-between mt-2">
                     <h3 className="font-bold text-xl bg-gradient-to-r from-[#4795e4] to-[#ffffff] text-transparent bg-clip-text ">{project.name}</h3>

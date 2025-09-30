@@ -76,10 +76,16 @@ html{
 }
 }
 
-
+ 
 .main-skill{
     animation: moveLeft 60s infinite linear;
     -webkit-animation: moveLeft 60s infinite linear;
+}
+@media(max-width:640px){
+    .main-skill{
+    animation: moveLeft 40s infinite linear;
+    -webkit-animation: moveLeft 40s infinite linear;
+}
 }
 
 @keyframes moveLeft {
@@ -118,17 +124,71 @@ html{
 }
 }
 
-.move-text{
-    transform: translatex(0) !important;
-    -webkit-transform: translatex(0) !important;
-    -moz-transform: translatex(0) !important;
-    -ms-transform: translatex(0) !important;
-    -o-transform: translatex(0) !important;
+.text{
+    transform: translatey(50px) ;
+    -webkit-transform: translatey(50px) ;
+    -moz-transform: translatey(50px) ;
+    -ms-transform: translatey(50px) ;
+    -o-transform: translatey(50px) ;
+    opacity: 0;
 }
-.move-iamge{
-    transform: translatex(0) !important;
-    -webkit-transform: translatex(0) !important;
-    -moz-transform: translatex(0) !important;
-    -ms-transform: translatex(0) !important;
-    -o-transform: translatex(0) !important;
+
+.image{
+    opacity: 0;
+    transform: translatex(50px);
+    -webkit-transform: translatex(50px);
+    -moz-transform: translatex(50px);
+    -ms-transform: translatex(50px);
+    -o-transform: translatex(50px);
+}
+.me{
+    opacity: 0;
+    transform: translatey(-40px);
+    -webkit-transform: translatey(-40px);
+    -moz-transform: translatey(-40px);
+    -ms-transform: translatey(-40px);
+    -o-transform: translatey(-40px);
+}
+
+.move-right-ser{
+    opacity: 0;
+    transform: translatex(70px);
+    -webkit-transform: translatex(70px);
+    -moz-transform: translatex(70px);
+    -ms-transform: translatex(70px);
+    -o-transform: translatex(70px);
+}
+.move-left-ser{
+    opacity: 0;
+    transform: translatex(-70px);
+    -webkit-transform: translatex(-70px);
+    -moz-transform: translatex(-70px);
+    -ms-transform: translatex(-70px);
+    -o-transform: translatex(-70px);
+}
+
+.serve-move{
+    opacity: 1;
+    transform: translatex(0);
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -ms-transform: translatex(0);
+    -o-transform: translatex(0);
+}
+
+#contact form{
+    opacity: 0;
+    transform: translatey(100px);
+    -webkit-transform: translatey(100px);
+    -moz-transform: translatey(100px);
+    -ms-transform: translatey(100px);
+    -o-transform: translatey(100px);
+}
+.moveUp{
+    opacity: 1 !important;
+    transform: translatey(0) !important;
+    -webkit-transform: translatey(0) !important;
+    -moz-transform: translatey(0) !important;
+    -ms-transform: translatey(0) !important;
+    -o-transform: translatey(0) !important;
 }

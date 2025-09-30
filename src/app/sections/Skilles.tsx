@@ -89,7 +89,7 @@ const Skilles = () => {
         <section id="skills" className="bg-gradient-to-b from-[#1b0d27] to-[#30285a] min-h-[100vh] py-14 pt-22" >
             <h2 className="text-white bg-[#1c6dc5] w-fit p-4 mx-auto font-[500] text-3xl rounded-md mb-24">My Skills</h2>
             <div className="collect  overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)] max-sm:[mask-image:linear-gradient(to_bottom,transparent,black,transparent)]">
-                <div className="flex gap-6 main-skill  max-sm:flex-col max-sm:w-1/1 max-sm:h-200 ">
+                <div className="flex gap-6 main-skill  max-sm:flex-col max-sm:w-1/1 max-sm:h-250 ">
                     {dataList}
                     {dataList}
                     {dataList}

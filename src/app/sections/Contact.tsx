@@ -7,20 +7,20 @@ const Contact = () => {
         <section id="contact" className="py-14 bg-gradient-to-b from-[#1b0d27] to-[#30285a]">
             <div className="collect flex justify-between items-center gap-10 max-md:flex-col">
                 
-                <form className="p-8 bg-gradient-to-b from-[#30285a] to-[#1b0d27] rounded-xl w-[500px] max-sm:w-1/1">
+                <form action="https://formspree.io/f/xnngdqzr" method="POST" className="transition duration-1000 p-8 bg-gradient-to-b from-[#30285a] to-[#1b0d27] rounded-xl w-[500px] max-sm:w-1/1">
                     <h2 className="text-4xl max-sm:text-3xl bg-gradient-to-r from-[#9b47e4] to-[#ffffff] text-transparent bg-clip-text
                     font-bold mb-4
                     ">Let&lsquo;s work together!</h2>
                     <p className="text-white mb-6">I’d be happy to discuss your project and explore how we can work together.</p>
                     <div className="flex max-sm:flex-col gap-4 mb-4 justify-between">
-                        <input type="text" className="w-[48%] max-sm:w-1/1 h-[40px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] pl-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="First Nmae"/>
-                        <input type="text" className="w-[48%] max-sm:w-1/1 h-[40px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] pl-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="Last Nmae"/>
+                        <input name="first name" type="text" className="w-[48%] max-sm:w-1/1 h-[40px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] pl-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="First Nmae"/>
+                        <input name="last name" type="text" className="w-[48%] max-sm:w-1/1 h-[40px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] pl-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="Last Nmae"/>
                     </div>
                     <div className="flex max-sm:flex-col gap-4 mb-4 justify-between">
-                        <input type="text" className="w-[48%] max-sm:w-1/1 h-[40px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] pl-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="Email address"/>
-                        <input type="text" className="w-[48%] max-sm:w-1/1 h-[40px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] pl-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="Phone Number"/>
+                        <input name="email" type="text" className="w-[48%] max-sm:w-1/1 h-[40px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] pl-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="Email address"/>
+                        <input name="phone" type="text" className="w-[48%] max-sm:w-1/1 h-[40px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] pl-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="Phone Number"/>
                     </div>
-                    <textarea className="mb-4 w-1/1 h-[150px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] p-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="Message"></textarea>
+                    <textarea name="message" className="mb-4 w-1/1 h-[150px] bg-gradient-to-b from-[#1b0d27] to-[#30285a] p-4 outline-0 caret-amber-50 text-[#cbe1ff]" placeholder="Message"></textarea>
                     <button className="bg-gradient-to-r from-[#2e74ca] to-[#8c279b] p-2 text-white
                     rounded-xl cursor-pointer transition duration-300 hover:opacity-80">Send Message</button>
                 </form>
