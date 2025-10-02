@@ -4,7 +4,7 @@ import Image from "next/image"
 import Github from '../../../public/Images/git.png'
 ///component
 import Building from '../../../public/Images/building.png'
-import Allwakel from '../../../public/Images/alwakel.png'
+import Allwakel from '../../../public/Images/allwakel.png'
 import Clinic from '../../../public/Images/clinic.png'
 import Hospital from '../../../public/Images/hospital.png'
 import SaaS from '../../../public/Images/saas.png'
@@ -31,13 +31,6 @@ const Projects = () => {
             move:"right"
         },
         {
-            img:Allwakel,
-            name:"Allwakel app",
-            link:"https://all-wakel-01.netlify.app/",
-            git:"https://github.com/ahsanelm39-star/Programming-company",
-            move:"left"
-        },
-        {
             img:SaaS,
             name:"SaaS app",
             link:"https://landing-page-one-pearl-53.vercel.app/",
@@ -51,6 +44,13 @@ const Projects = () => {
             git:"https://github.com/ahsanelm39-star/HTML-CSS-Project",
             move:"left"
         },
+        {
+            img:Allwakel,
+            name:"Allwakel app",
+            link:"https://all-wakel-01.netlify.app/",
+            git:"https://github.com/ahsanelm39-star/Programming-company",
+            move:"left"
+        }
     ]
 
     const dataList = data.map((project,index)=>{ 
